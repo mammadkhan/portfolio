@@ -2,6 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link'
 import {useState} from 'react';
 
+import arrow_forward from '../public/arrow_forward.png'
+import arrow_back from '../public/arrow_back.png'
+
 import jobit_desktop from '../public/jobit_desktop.png';
 import jobit_mobile from '../public/jobit_mobile.png';
 
@@ -49,7 +52,7 @@ function PortfolioSlider() {
 
   return (
     <div className="portfolioWrapper">
-        <div onClick={()=> previus()} className="arrows" id="left"></div>
+        <div onClick={()=> previus()} className="arrows" id="left"><Image src={arrow_back} layout="fill" alt="back arrow"/></div>
             <div className="slider">
                 <div className="desktop">
                     <Image src={slides[currentSlide]["desk"]} layout="fill" alt="portfolio project design"/>
@@ -65,7 +68,7 @@ function PortfolioSlider() {
                 </Link>
                 <p className="projectAbout">{slides[currentSlide]["desc"]}</p>
             </div>
-        <div onClick={()=> next()} className="arrows" id="right"></div>
+        <div onClick={()=> next()} className="arrows" id="right"><Image src={arrow_forward} layout="fill" alt="forward arrow"/></div>
     </div>
   )
 }
