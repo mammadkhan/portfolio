@@ -275,8 +275,6 @@ header{
 }
 
 #left{
-  background-image: url("../public/arrow_back.png");
-  background-position: center center;
   position: absolute;
   left: 30px;
   top: 50%;
@@ -284,8 +282,6 @@ header{
 }
 
 #right{
-  background-image: url("../public/arrow_forward.png");
-  background-position: center center;
   position: absolute;
   right: 30px;
   top: 50%;
