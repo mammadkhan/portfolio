@@ -11,6 +11,9 @@ import jobit_mobile from '../public/jobit_mobile.png';
 import mcommerce_desktop from '../public/mcommerce_desktop.png';
 import mcommerce_mobile from '../public/mcommerce_mobile.png';
 
+import mbbankapp_desktop from '../public/mbbankapp_desktop.png';
+import mbbankapp_mobile from '../public/mbbankapp_mobile.png';
+
 
 function PortfolioSlider() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,6 +34,14 @@ function PortfolioSlider() {
             desc: 'E-commerce platform design',
             link: 'https://mbcommerce.netlify.app/',
             linkPrev: 'mbcommerce.netlify.app',
+        },
+        2: {
+            desk: mbbankapp_desktop,
+            mob: mbbankapp_mobile,
+            title: 'MBBankApp',
+            desc: 'Mobile banking app design',
+            link: 'https://mbbankapp.netlify.app/',
+            linkPrev: 'mbbankapp.netlify.app',
         }
     }
 
