@@ -14,6 +14,8 @@ import mcommerce_mobile from '../public/mcommerce_mobile.png';
 import mbbankapp_desktop from '../public/mbbankapp_desktop.png';
 import mbbankapp_mobile from '../public/mbbankapp_mobile.png';
 
+import mbsketchapp_desktop from '../public/mbsketchapp_desktop.png';
+import mbsketchapp_mobile from '../public/mbsketchapp_mobile.png';
 
 function PortfolioSlider() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,7 +29,15 @@ function PortfolioSlider() {
             link: 'https://azjobit.netlify.app/',
             linkPrev: 'azjobit.netlify.app',
         },    
-        1: {
+        1:{
+            desk: mbsketchapp_desktop,
+            mob: mbsketchapp_mobile,
+            title: 'MBSketchapp',
+            desc: 'Sketch.com/apps recreation',
+            link: 'https://mbsketchapp.netlify.app/',
+            linkPrev: 'mbsketchapp.netlify.app',
+        },
+        2: {
             desk: mcommerce_desktop,
             mob: mcommerce_mobile,
             title: 'MBCommerce',
@@ -35,7 +45,7 @@ function PortfolioSlider() {
             link: 'https://mbcommerce.netlify.app/',
             linkPrev: 'mbcommerce.netlify.app',
         },
-        2: {
+        3: {
             desk: mbbankapp_desktop,
             mob: mbbankapp_mobile,
             title: 'MBBankApp',
@@ -43,6 +53,7 @@ function PortfolioSlider() {
             link: 'https://mbbankapp.netlify.app/',
             linkPrev: 'mbbankapp.netlify.app',
         }
+
     }
 
     const next = () => {
