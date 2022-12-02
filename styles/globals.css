@@ -208,7 +208,7 @@ nav {
 .portfolioTitle {
   color: White;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 120px;
 }
 
 .portfolioGrid {
@@ -254,26 +254,6 @@ nav {
 @media screen and (max-width: 1550px) {
   .portfolioTitle {
     font-size: 100px;
-  }
-  .slider {
-    width: 670px;
-  }
-  .desktop {
-    width: 600px;
-    height: 360px;
-  }
-  .mobile {
-    width: 140px;
-    height: 260px;
-  }
-  .projectTitle {
-    font-size: 30px;
-  }
-  .projectLink {
-    font-size: 15px;
-  }
-  .projectAbout {
-    font-size: 14px;
   }
 }
 
