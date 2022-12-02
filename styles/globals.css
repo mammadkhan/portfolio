@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -8,13 +8,22 @@
   overflow: hidden;
 }
 
+html{
+  height: 100%;
+}
+
 body {
   background-color: black;
+  height: 100%;
+}
+
+#__next{
+  height: 100%;
 }
 
 .App {
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 .backgroundGrad {
@@ -202,7 +211,8 @@ nav {
     #070f16,
     #061114
   );
-  height: 100vh;
+  height: 100%;
+  overflow:auto;
 }
 
 .portfolioTitle {
@@ -215,6 +225,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
+  margin-bottom:10px;
 }
 
 .portfolioItem {
@@ -227,14 +238,23 @@ nav {
 .itemImage {
   position: relative;
   height: calc(100% - 60px);
+  background-color: #071418;
 }
 
 .itemInfo {
   height: 60px;
+  padding:5px 10px;
+  text-align: center;
 }
 
 .itemTitle {
   font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.itemDomainPreview{
+  color:rgba(255, 255, 255,0.6);
+  font-size:1rem;
 }
 
 .itemTools {
@@ -243,9 +263,9 @@ nav {
   top: 0;
   right: 0;
   z-index: 1;
-  width: 10%;
+  width: 35px;
   height: calc(100% - 60px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255,0.1);
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -261,85 +281,40 @@ nav {
   .portfolioTitle {
     font-size: 70px;
   }
-  .slider {
-    width: 440px;
-  }
-  .desktop {
-    width: 400px;
-    height: 240px;
-    border: 1px solid white;
-  }
-  .mobile {
-    width: 85px;
-    height: 170px;
-    border: 1px solid white;
-  }
-  .projectTitle {
-    font-size: 25px;
-  }
-  .projectLink {
-    font-size: 14px;
-  }
-  .projectAbout {
-    font-size: 12px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
   .marquee {
     font-size: 120px;
   }
-  .portfolioWrapper {
-    flex-direction: column;
-    gap: 0px;
-    justify-content: space-around;
-  }
   .portfolioTitle {
     margin-top: 10px;
     font-size: 40px;
   }
-  .projectInfo {
-    text-align: center;
-  }
-  .desktop {
-    width: 100%;
-    height: 350px;
-  }
-  .mobile {
-    right: 40px;
-    bottom: 0px;
-  }
-  .slider {
-    width: 100vw;
-    padding: 0px 40px;
-  }
-  #left {
-    top: initial;
-    bottom: 10%;
-    transform: translateY(-10%);
-  }
-  #right {
-    top: initial;
-    bottom: 10%;
-    transform: translateY(-10%);
+  .portfolioGrid {
+    margin-top:10px;
+    grid-template-columns: repeat(2, 1fr);
+  }  
+  .itemTools {
+    width: 30px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .desktop {
-    height: 290px;
-  }
   .Nav * {
     font-size: 16px;
   }
+
   nav {
     width: 100%;
     padding: 0px 40px;
   }
-}
 
-@media screen and (max-width: 500px) {
-  .desktop {
-    height: 250px;
+  .itemTitle {
+    font-size: 1rem;
+  }
+
+  .itemDomainPreview{
+    font-size:0.8rem;
   }
 }

@@ -4,9 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 
 import { portfoliodata } from "../data/portfoliodata";
 
-//test import delete this
-import react from "../public/tools/react.png";
-
 function Portfolio() {
   return (
     <div className="portfolio">
