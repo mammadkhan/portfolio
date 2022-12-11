@@ -7,6 +7,7 @@ import randomnumfacts from "../public/websites/randomnumfacts.png";
 import sketchapp from "../public/websites/sketchapp.png";
 import snipperapp from "../public/websites/snipperapp.png";
 import weatherapp from "../public/websites/weatherapp.png";
+import dotahol from "../public/websites/dotahol.png;
 
 //Import used tool icons
 import react from "../public/tools/react.png";
@@ -75,7 +76,7 @@ export const portfoliodata = [
 		title: "Higher or Lower game",
 		domainPreview: "dotahol.com",
 		domain: "https://dotahol.com",
-		imgUrl: weatherapp,
-		tools: [react, api],
+		imgUrl: dotahol,
+		tools: [react,nextjs,api],
 	},
 ];
