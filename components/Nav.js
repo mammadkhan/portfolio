@@ -5,7 +5,7 @@ function Nav() {
     return (
       <div className="Nav">
           <nav>
-            <Link href='/Mammadkhan Bayramov CV.docx'>
+            <Link href='/Mammadkhan Bayramov CV.pdf'>
               <a>CV</a>
             </Link>
             <Link href="/portfolio">
