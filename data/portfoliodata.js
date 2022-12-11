@@ -7,7 +7,7 @@ import randomnumfacts from "../public/websites/randomnumfacts.png";
 import sketchapp from "../public/websites/sketchapp.png";
 import snipperapp from "../public/websites/snipperapp.png";
 import weatherapp from "../public/websites/weatherapp.png";
-import dotahol from "../public/websites/dotahol.png;
+import dotahol from "../public/websites/dotahol.png";
 
 //Import used tool icons
 import react from "../public/tools/react.png";
