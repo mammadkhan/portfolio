@@ -21,7 +21,7 @@ export const portfoliodata = [
 		domainPreview: "azjobit.netlify.app",
 		domain: "https://azjobit.netlify.app",
 		imgUrl: azjobit,
-		tools: [react],
+		tools: [react, nextjs],
 	},
 	{
 		title: "Bank App",
