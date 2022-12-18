@@ -29,7 +29,7 @@ function Portfolio() {
               ))}
             </div>
             <div className="itemImage">
-              <Image src={website.imgUrl} layout="fill" objectFit="contain" />
+              <Image src={website.imgUrl} layout="fill" priority={true} objectFit="contain" />
             </div>
             <div className="itemInfo">
               <h2 className="itemTitle">{website.title}</h2>
