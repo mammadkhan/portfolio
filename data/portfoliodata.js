@@ -83,7 +83,7 @@ export const portfoliodata = [
 		imgUrl: weatherapp,
 		tools: [react, api],
 	},
-		{
+	{
 		title: "Higher or Lower game",
 		domainPreview: "dotahol.com",
 		domain: "https://dotahol.com",
