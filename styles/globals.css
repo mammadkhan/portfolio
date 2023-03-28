@@ -290,7 +290,9 @@ nav {
   .Nav * {
     font-size: 16px;
   }
-
+  .portfolioGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
   nav {
     width: 100%;
     padding: 0px 40px;

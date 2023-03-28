@@ -16,10 +16,10 @@ function Portfolio() {
       </header>
       <main className="portfolioGrid">
         {portfoliodata.map((website, index) => (
-          <a href={website.domain} className="portfolioItem" target="_blank" key={index}>
+          <a href={website.domain} key={index} className="portfolioItem" target="_blank">
             <div className="itemTools">
-              {website.tools.map((tool) => (
-                <Image src={tool} />
+              {website.tools.map((tool, index) => (
+                <Image src={tool} key={index} />
               ))}
             </div>
             <div className="itemImage">
