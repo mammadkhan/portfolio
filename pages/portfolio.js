@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
 
 import { portfoliodata } from "../data/portfoliodata";
 
@@ -16,13 +15,8 @@ function Portfolio() {
         <h1 className="portfolioTitle">&lt;h1&gt;Portfolio&lt;&#47;h1&gt;</h1>
       </header>
       <main className="portfolioGrid">
-        {portfoliodata.map((website) => (
-          <a
-            href={website.domain}
-            className="portfolioItem"
-            target="_blank"
-            key={uuidv4()}
-          >
+        {portfoliodata.map((website, index) => (
+          <a href={website.domain} className="portfolioItem" target="_blank" key={index}>
             <div className="itemTools">
               {website.tools.map((tool) => (
                 <Image src={tool} />
