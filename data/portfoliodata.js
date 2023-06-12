@@ -10,6 +10,7 @@ import sketchapp from "../public/websites/sketchapp.png";
 import snipperapp from "../public/websites/snipperapp.png";
 import weatherapp from "../public/websites/weatherapp.png";
 import dotahol from "../public/websites/dotahol.png";
+import passgen from "../public/websites/passgen.png";
 
 //Import used tool icons
 import react from "../public/tools/react.png";
@@ -83,7 +84,6 @@ export const portfoliodata = [
     imgUrl: iplocation,
     tools: [angular, api],
   },
-
   {
     title: "Random Number Facts",
     domainPreview: "mbrandomnumfacts.surge.sh",
@@ -91,12 +91,18 @@ export const portfoliodata = [
     imgUrl: randomnumfacts,
     tools: [react, api],
   },
-
   {
     title: "Snipperapp challenge",
     domainPreview: "mbsnipperchallenge.netlify.app",
     domain: "https://mbsnipperchallenge.netlify.app",
     imgUrl: snipperapp,
     tools: [react],
+  },
+  {
+    title: "Password generator",
+    domainPreview: "mbpassgen.netlify.app",
+    domain: "https://mbpassgen.netlify.app/",
+    imgUrl: passgen,
+    tools: [],
   },
 ];
